@@ -41,12 +41,13 @@ pip install fastapi uvicorn
 uvicorn main:app --reload
 
 # Target API URL: 127.0.0.1:8000
-
-### 02. Frontend interface
+```
+### 02. Frontend Interface
 
 ```bash
 cd frontend
 npm install
 npm run dev
+
+# Target Interface URL: localhost:5173
 ```
-# Target Interface URL: http://localhost:5173
