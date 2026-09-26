@@ -6,10 +6,10 @@
 ---
 
 ## DE // Systemkonzept (Arbeitsprobe zeit:raum)
-Kinetik demonstriert moderne Headless-Architektur durch die Verschmelzung von serverseitiger Kryptografie und clientseitigem WebGL-Rendering. Ein FastAPI-Backend übersetzt Texteingaben deterministisch in Vektordaten (MD5-Hashing). Das Vue-Frontend konsumiert diese API asynchron und berechnet in Echtzeit physikalische Rotationswerte und PBR-Materialeigenschaften für eine Three.js-Skulptur.
+Kinetik demonstriert moderne Headless-Architektur durch die Verschmelzung von serverseitiger Logik und clientseitigem WebGL-Rendering. Ein FastAPI-Backend übersetzt Texteingaben deterministisch in physikalische Rotationsvektoren (MD5-Hashing). Das Vue-Frontend konsumiert diese API asynchron, verarbeitet Orbit-Controls sowie Raycasting-Interaktionen und rendert eine Three.js-Skulptur, deren visuelles Profil strikt an die Corporate Identity der zeit:raum Gruppe angepasst ist.
 
 ## EN // System Concept
-Kinetik demonstrates modern headless architecture by merging server-side cryptography with client-side WebGL rendering. A FastAPI backend deterministically translates text inputs into vector data via MD5 hashing. The Vue frontend asynchronously consumes this API, calculating real-time physical rotation values and PBR material properties for a Three.js sculpture.
+Kinetik demonstrates modern headless architecture by merging server-side logic with client-side WebGL rendering. A FastAPI backend deterministically translates text inputs into physical rotation vectors via MD5 hashing. The Vue frontend asynchronously consumes this API, handles orbit controls and raycasting interactions, and renders a Three.js sculpture strictly aligned with the zeit:raum corporate identity.
 
 ---
 
@@ -17,7 +17,7 @@ Kinetik demonstrates modern headless architecture by merging server-side cryptog
 
 **Frontend // Interface & WebGL**
 - Framework: Vue 3 (Composition API), Vite
-- Engine: Three.js (GLTFLoader, ACESFilmicToneMapping)
+- Engine: Three.js (GLTFLoader, Raycaster, OrbitControls)
 - UI: Native CSS3 (Flexbox, Backdrop-filters)
 
 **Backend // Algorithmic Processing**
