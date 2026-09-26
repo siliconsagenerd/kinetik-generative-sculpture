@@ -1,51 +1,52 @@
-# KINETIK // Procedural WebGL Sculpture & Headless Architecture
+# K I N E T I K
+**Procedural WebGL Architecture**
 
-[LAUNCH LIVE DEPLOYMENT](https://kinetik-generative-sculpture.vercel.app)
-
----
-
-## DE // Projektarchitektur (Arbeitsprobe zeit:raum)
-Kinetik ist ein experimentelles System an der Schnittstelle von generativer Logik und WebGL-Rendering. Das Projekt implementiert eine entkoppelte Architektur zur Demonstration moderner Headless-Datenflüsse.
-
-Ein Python-Backend fungiert als algorithmischer Prozessor. Texteingaben werden über MD5-Kryptografie in deterministische Physik- und Farbvektoren übersetzt. Eine asynchrone Vue 3-Applikation konsumiert diese REST-API und überführt die generierten Parameter in Echtzeit auf eine PBR-schattierte 3D-Skulptur.
-
-## EN // System Architecture
-Kinetik is an experimental system at the intersection of generative logic and WebGL rendering. The project implements a decoupled architecture to demonstrate modern headless data flows.
-
-A Python backend acts as an algorithmic processor. Text inputs are translated via MD5 cryptography into deterministic physics and color vectors. An asynchronous Vue 3 application consumes this REST API, mapping the generated parameters in real-time onto a PBR-shaded 3D sculpture.
+[LIVE DEPLOYMENT](https://kinetik-generative-sculpture.vercel.app)
 
 ---
 
-## Technical Stack
+## DE // Systemkonzept (Arbeitsprobe zeit:raum)
+Kinetik demonstriert moderne Headless-Architektur durch die Verschmelzung von serverseitiger Kryptografie und clientseitigem WebGL-Rendering. Ein FastAPI-Backend übersetzt Texteingaben deterministisch in Vektordaten (MD5-Hashing). Das Vue-Frontend konsumiert diese API asynchron und berechnet in Echtzeit physikalische Rotationswerte und PBR-Materialeigenschaften für eine Three.js-Skulptur.
 
-**Visual Interface (Frontend)**
-* Framework: Vue 3 (Composition API), Vite
-* WebGL Context: Three.js (GLTFLoader, ACESFilmicToneMapping)
-* Styling: Native CSS3 (Flexbox, Backdrop-filters)
-
-**Algorithmic Engine (Backend)**
-* Framework: Python 3, FastAPI, Uvicorn
-* Processing: hashlib (MD5 Deterministic Hashing)
-* Architecture: RESTful API, CORS Middleware
+## EN // System Concept
+Kinetik demonstrates modern headless architecture by merging server-side cryptography with client-side WebGL rendering. A FastAPI backend deterministically translates text inputs into vector data via MD5 hashing. The Vue frontend asynchronously consumes this API, calculating real-time physical rotation values and PBR material properties for a Three.js sculpture.
 
 ---
 
-## Local Execution Environment
+## CORE STACK
 
-Parallel execution of the backend and frontend is required.
+**Frontend // Interface & WebGL**
+- Framework: Vue 3 (Composition API), Vite
+- Engine: Three.js (GLTFLoader, ACESFilmicToneMapping)
+- UI: Native CSS3 (Flexbox, Backdrop-filters)
 
-### 1. Initialize API Server
+**Backend // Algorithmic Processing**
+- Framework: Python 3, FastAPI, Uvicorn
+- Logic: hashlib (MD5 Deterministic Generation)
+- Network: REST API, strict CORS Middleware
+
+---
+
+## LOCAL INITIALIZATION
+
+Execute backend and frontend concurrently in isolated terminal instances.
+
+### 01. Backend Server
+
 ```bash
 cd backend
 python3 -m venv venv
 source venv/bin/activate
 pip install fastapi uvicorn
 uvicorn main:app --reload
-Target: http://127.0.0.1:8000
 
-### 1. Initialize Visual Interface
+# Target API URL: [http://127.0.0.1:8000](http://127.0.0.1:8000)
+
+### 02. Frontend interface
 ```bash
 cd frontend
 npm install
 npm run dev
-Target: http://localhost:5173
+```
+
+# Target Interface URL: http://localhost:5173
