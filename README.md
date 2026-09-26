@@ -39,14 +39,14 @@ python3 -m venv venv
 source venv/bin/activate
 pip install fastapi uvicorn
 uvicorn main:app --reload
-
+```
 # Target API URL: [http://127.0.0.1:8000](http://127.0.0.1:8000)
 
 ### 02. Frontend interface
+
 ```bash
 cd frontend
 npm install
 npm run dev
 ```
-
 # Target Interface URL: http://localhost:5173
