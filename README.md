@@ -1,4 +1,10 @@
 # K I N E T I K – Procedural WebGL Sculpture System
+[![Live Demo](https://img.shields.io/badge/Demo-Vercel%20Live-black?style=flat&logo=vercel)](https://kinetik-generative-sculpture.vercel.app)
+[![Three.js](https://img.shields.io/badge/Three.js-WebGL%20PBR-000000?style=flat&logo=three.js&logoColor=white)](https://threejs.org)
+[![Vue 3](https://img.shields.io/badge/Vue.js-3.x-4FC08D?style=flat&logo=vuedotjs&logoColor=white)](https://vuejs.org)
+[![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=white)](https://vitejs.dev)
+[![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
+[![Docker](https://img.shields.io/badge/Docker-Containerized-2496ED?style=flat&logo=docker&logoColor=white)](https://www.docker.com)
 
 [Deutsch](#deutsch) | [English](#english)
 
